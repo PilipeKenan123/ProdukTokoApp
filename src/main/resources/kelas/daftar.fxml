@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="kelas.controller.DaftarController" spacing="12" styleClass="halaman-daftar">
+    <children>
+        <Label text="Daftar Produk" styleClass="judul"/>
+        <TextField fx:id="cariField" promptText="Cari nama produk" onAction="#cari"/>
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <children>
+                <Button text="Cari" onAction="#cari"/>
+                <Button text="Reset" onAction="#resetPencarian"/>
+                <Button text="Tambah" onAction="#tambah" styleClass="primary"/>
+                <Button text="Lihat Detail" onAction="#detail"/>
+                <Button text="Hapus" onAction="#hapus"/>
+            </children>
+        </HBox>
+        <TableView fx:id="tabel" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="kodeCol" text="Kode" prefWidth="110"/>
+                <TableColumn fx:id="namaCol" text="Nama" prefWidth="340"/>
+                <TableColumn fx:id="kategoriCol" text="Kategori" prefWidth="170"/>
+                <TableColumn fx:id="hargaCol" text="Harga (Rp)" prefWidth="170"/>
+            </columns>
+        </TableView>
+        <Label fx:id="pesanLabel" styleClass="pesan"/>
+    </children>
+</VBox>

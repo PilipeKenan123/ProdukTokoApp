@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="kelas.controller.DetailController" styleClass="halaman">
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="16" styleClass="header">
+            <children>
+                <Label text="Detail Produk" styleClass="judul"/>
+                <Button text="Lihat Daftar" onAction="#bukaDaftar"/>
+            </children>
+        </HBox>
+        <VBox styleClass="isi" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox spacing="6" styleClass="kartu" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Kode" styleClass="caption"/>
+                        <Label fx:id="kodeLabel" styleClass="nilai-kode"/>
+                        <Label text="Nama produk" styleClass="caption"/>
+                        <Label fx:id="namaLabel" styleClass="nilai"/>
+                        <Label text="Kategori" styleClass="caption"/>
+                        <Label fx:id="kategoriLabel" styleClass="nilai"/>
+                        <Label text="Harga" styleClass="caption"/>
+                        <Label fx:id="hargaLabel" styleClass="nilai-besar"/>
+                        <Region VBox.vgrow="ALWAYS"/>
+                        <Label fx:id="pesanLabel" styleClass="pesan"/>
+                        <HBox>
+                            <children>
+                                <Button text="Tambah Produk Lain" onAction="#tambahLagi" styleClass="primary"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>

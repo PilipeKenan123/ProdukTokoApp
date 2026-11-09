@@ -1,0 +1,86 @@
+.halaman {
+    -fx-background-color: #f4f7fb;
+    -fx-font-size: 15px;
+}
+.halaman-daftar {
+    -fx-background-color: white;
+    -fx-padding: 24 28 8 28;
+    -fx-font-size: 15px;
+}
+.header {
+    -fx-background-color: white;
+    -fx-padding: 22 24 22 24;
+}
+.isi {
+    -fx-padding: 0 24 24 24;
+}
+.judul {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12355b;
+}
+.subjudul {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+.kartu {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-padding: 28 36 28 36;
+}
+.hint {
+    -fx-text-fill: #5b6f8f;
+    -fx-font-size: 14px;
+}
+.caption {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 14px;
+}
+.nilai {
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 8 0;
+}
+.nilai-kode {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 8 0;
+}
+.nilai-besar {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #12355b;
+}
+.pesan {
+    -fx-text-fill: #d00000;
+}
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #d0d7e2;
+    -fx-padding: 12 14 12 14;
+}
+.text-field:focused {
+    -fx-border-color: #0ea5e9;
+    -fx-border-width: 2;
+}
+.combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-pref-height: 48;
+}
+.button {
+    -fx-background-radius: 10;
+    -fx-padding: 10 20 10 20;
+}
+.button.primary {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button.primary:hover {
+    -fx-background-color: #1d4ed8;
+}
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+}

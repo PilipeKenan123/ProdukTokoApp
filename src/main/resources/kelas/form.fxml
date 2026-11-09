@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="kelas.controller.FormController" styleClass="halaman">
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="16" styleClass="header">
+            <children>
+                <Label text="Produk Toko" styleClass="judul"/>
+                <Button text="Lihat Daftar" onAction="#bukaDaftar"/>
+            </children>
+        </HBox>
+        <VBox styleClass="isi" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox spacing="8" styleClass="kartu" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Tambah produk baru" styleClass="subjudul"/>
+                        <Label text="Nama produk"/>
+                        <TextField fx:id="namaField" promptText="Contoh: Nasi Goreng"/>
+                        <Label text="Kategori"/>
+                        <ComboBox fx:id="kategoriBox" maxWidth="Infinity"/>
+                        <Label text="Makanan atau Minuman" styleClass="hint"/>
+                        <Label text="Harga produk (Rp)"/>
+                        <TextField fx:id="hargaField" promptText="Contoh: 15000"/>
+                        <Label text="Harga harus lebih dari nol, tanpa titik atau koma." styleClass="hint"/>
+                        <Button text="Simpan dan Lihat Detail" onAction="#simpan"
+                                styleClass="primary" maxWidth="Infinity"/>
+                        <Label fx:id="pesanLabel" styleClass="pesan" wrapText="true"/>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</VBox>
