@@ -1,4 +1,3 @@
-<img width="958" height="596" alt="image" src="https://github.com/user-attachments/assets/687fb809-f71b-4478-8e1e-5790c9d9ed6f" /># ProdukTokoApp
 
 Aplikasi desktop **JavaFX** untuk mencatat produk toko. Proyek ini adalah hasil modifikasi aplikasi praktikum **TiketApp** (Praktikum GUI Lanjutan) menjadi aplikasi daftar produk, dengan struktur dan pola kode yang sama (MVC sederhana: model, data, controller, FXML, CSS).
 
